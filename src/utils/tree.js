@@ -23,9 +23,9 @@ const retrieveChildrens = (path) => {
 const getMimeType = (path) => {
     let extension = path.split(".");
     let mimetype = extension[extension.length - 1]
-    console.log(mimetype)
+    
     switch (mimetype) {
-        case 'js': return 'application/x-javascript'
+        case 'js': return 'text/js'
         case 'json': return 'application/json'
         case 'html': return 'text/html'
         case 'doc': return 'application/msword'

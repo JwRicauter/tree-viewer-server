@@ -22,6 +22,7 @@ async function getChildren(req, res, next) {
 
 async function childFile(req, res, next) {
   try {      
+      
       let path = req.originalUrl.split("=")[1];
       path = decodeURIComponent(path);
 
